@@ -16,7 +16,7 @@ async def meme(ctx):
             embed = discord.Embed(
                 color = discord.Color.purple()
             )
-            embed.set_image(url = memes["data"]["children"][random.randint(0, 25)]["data]["url"])
+            embed.set_image(url = memes["data"]["children"][random.randint(0, 25)]["data"]["url"])
             await ctx.send(embed = embed)
 
 client.run(token)
